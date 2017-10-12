@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-2">
+      <input type="text" class="form-control" [(ngModel)]="userName" (input)="usernameEntered($event)">
+      <p> {{userName}}</p>
+      <button class="btn btn-primary" [disabled]="userName === ''" (click)="clearText()">Add User </button>
+    </div>
+  </div>
+
+</div>

@@ -13,7 +13,8 @@
  <button class ="btn btn-primary"
  [disabled]="serverName === ''" 
  (click)="removeServer()">Remove Server </button>
- <p [innerText]="allowNewServer"></p>
+ <p></p>
+ <p *ngIf="alreadyCreated === true">Server with the name {{ serverName }} already exists !!!</p>
 
  <p *ngIf="serverCreated">  {{ serverCreationStatus }} </p>
  <app-server *ngFor="let server of servers" (click)="removeServer(server)"></app-server>

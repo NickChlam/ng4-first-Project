@@ -1,0 +1,17 @@
+<h1>Assignment #2 Styling  </h1>
+<ol>
+    <li>Add a button which says "Display Details"</li>
+    <li>add a paragraph with context of your choice </li>
+    <li>toggle diplay of paragraph with the created button</li>
+    <li>log all button clicks in an array and output array below the paragraph </li>
+    <li>every other item blue background and a white color </li>
+</ol>
+<p></p>
+<button class="btn btn-primary" (click)="showMessage()">Display Details</button>
+<p></p>
+<p *ngIf="isHidden === false">Word of the day is "palliate" </p>
+<div *ngFor="let click of clicks; let i = index" > <p class="new" 
+    [ngStyle]="{backgroundColor: (i +1 ) % 2 > 0 ? 'blue' : 'transparent'}" 
+    [ngClass]="{white: (i +1) %2 > 0}"> {{ click }}</p>
+    
+ </div> 

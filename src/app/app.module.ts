@@ -10,6 +10,7 @@ import { WarningComponent } from './warningalert/warningalert.component';
 import { SuccessComponent } from './Success/success.component';
 import { ServersComponent } from './servers/servers.component';
 import { UsernameComponent } from './username/username.component';
+import {AssignmentComponent} from './assignment-2/asssignment.compoment';
 
 
 
@@ -20,7 +21,8 @@ import { UsernameComponent } from './username/username.component';
     WarningComponent,
     SuccessComponent,
     ServersComponent,
-    UsernameComponent ,
+    UsernameComponent,
+    AssignmentComponent
     
     
   ],
